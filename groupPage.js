@@ -204,9 +204,9 @@ export default class GroupPage extends Component  {
             (_, err) => (Alert.alert('Произошла какая-то ошибка'), console.log('error removeGroup (groups) - ', err)))
         });
         this.props.navigation.goBack()
-    }
+    } //Важный Комментарий
 
-    render() {
+    render() { 
         return (
             <View style={{...Styles.container, backgroundColor: '#fff'}}>
                 <ScrollView nestedScrollEnabled={true} contentContainerStyle={{flexGrow:1}}>
@@ -254,7 +254,7 @@ export default class GroupPage extends Component  {
                             'Не выбранно'}
                         </Text>
                         }
-                    </View>
+                    </View> //Важный Комментарий
                     <View style={this.state.editing? Styles.cardStudentRow_edit: Styles.cardStudentRow}>
                         <Text style={Styles.cardStudentLabel}>Заключение ЦПМПК{this.state.editing?' *': null}</Text>
                         {this.state.editing ? 

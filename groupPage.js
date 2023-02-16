@@ -6,6 +6,7 @@ import DropDownPicker from 'react-native-dropdown-picker';
 import { Feather } from '@expo/vector-icons';
 import GroupListStudents from '../components/groupListStudents'
 
+
 DropDownPicker.setLanguage("RU");
 
 export default class GroupPage extends Component  {
